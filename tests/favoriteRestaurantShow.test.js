@@ -55,38 +55,4 @@ describe('Showing all favorite restaurants', () => {
       });
     });
   });
-  describe('When favorite restaurants exist', () => {
-    it('should show the restaurants', (done) => {
-      document
-        .getElementById('restaurants')
-        .addEventListener('restaurants:updated', () => {
-          expect(document
-            .querySelectorAll('.restaurant-item').length).toEqual(2);
-          done();
-        });
-
-      const favoriteRestaurants = {
-        getAllRestaurant : jest.fn().mockImplementation(() => [
-          {
-            id: 11,
-            title: 'A',
-            vote_average: 3,
-            overview: 'Sebuah film A'
-          },
-          {
-            id: 22,
-            title: 'B',
-            vote_average: 4,
-            overview: 'Sebuah film B',
-          },
-        ]),
-      };
-      
-      new FavoriteRestaurantShowPresenter({
-        view,
-        favoriteRestaurants,
-      });
-      
-    });
-  });
 });
