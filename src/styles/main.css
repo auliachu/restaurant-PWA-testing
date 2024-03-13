@@ -1,0 +1,293 @@
+button:focus{
+  outline: 2px dashed #0f1d45;
+}
+
+input:focus{
+  outline: 2px dashed #0f1d45;
+}
+
+.skip-link{
+  position: absolute;
+  top:-40px;
+  left:0;
+  padding: 8px;
+  background-color: #bf1722;
+  color: white;
+  z-index: 100;
+}
+
+.skip-link:focus{
+  top:0;
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+.nav-bar{
+  width:100%;
+  background-color: #435585;
+  display: flex;
+  align-items: center;
+  color: white;
+  box-sizing: border-box;
+  padding: 18px;
+  justify-content:space-between;
+  font-family: 'Roboto Slab', serif;
+}
+
+.titleBar{
+  width: 20%;
+}
+
+.titleBar h4{
+  font-size: 20px;
+  font-weight: bold;  
+}
+
+.nav-list{
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.nav-list a{
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+  height: 44px;
+  min-width: 44px;
+  align-items: center;
+  display: flex;
+}
+
+.nav-list a:hover{
+  text-decoration: underline;
+}
+
+.list-link ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+  gap:28px;
+}
+
+.list-link ul a{
+  display: flex;
+  height: 44px;
+  min-width: 44px;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero{
+  background-color:lightblue;
+  background-image: url('../public/images/heros/hero-image_1.jpg');
+  width: 100%;
+  background-position: center;
+  min-height: 380px;
+  /* background-size: 100% 100%; */
+  background-position-x:100%;
+  background-position-y:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero__inner h4{
+  font-size: 30px;
+  font-family: 'Roboto-slab';
+  font-weight: 600;
+  color: white;
+  text-align: center;
+}
+
+.hero__tagline{
+  color: white;
+}
+
+.container{
+  gap: 10px;
+  margin-top: 30px;
+  padding: 40px;
+  width:fit-content;
+}
+
+.content img{
+  width: 100%;
+  height:max-content;
+}
+
+.main-title{
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+  padding-bottom: 18px;
+  font-family: 'Roboto-slab';
+  font-size: 25px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.content{
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+footer{
+  background-color: #435585;
+  padding: 20px;
+  font-family: 'roboto-slab';
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.content-item_title{
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 16px;
+  transition: 0.3 opacity;
+  padding-left: 15px;
+  padding-right: 5px;
+}
+
+.content-item_title a{
+  text-decoration: none;
+  color: #435585;
+}
+
+.content-item_title a:hover{
+  opacity: 0.5;
+}
+
+.content-item_details{
+  display: flex;
+  justify-content:space-between;
+  padding-left: 15px;
+  padding-right: 140px;
+  margin-top: 5px;
+}
+
+.content-item_city{
+  color:#0f1d45;
+}
+
+.content-item_rating{
+  color: black;
+}
+
+.content-item{
+  width: 100%;
+}
+
+.content{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+}
+
+.content-item_description{
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 1.2em;
+  padding-left: 15px;
+  padding-right: 7%;
+  margin-bottom: 15px;
+  text-align: justify;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+}
+
+.restaurant_title {
+  padding-bottom: 25px;
+}
+
+.detail-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 5%;
+  margin-left: 6%;
+  margin-right: 6%;
+}
+
+.restaurant_poster {
+  width: 100%;
+  height: 80%;
+  margin-bottom: 2%;
+}
+
+.info_tagline{
+  margin-bottom: 2%;
+}
+
+.restaurant_overview p {
+  text-align: justify;
+  font-size: 15px;
+  width: 100%;
+}
+
+.overview_tagline{
+  margin-top: 2%;
+}
+
+.info_menu{
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.foodMenu, .drinks-menu, .customer_review{
+  color: white;
+}
+
+.food_restaurant_menu, .drink_restaurant_menu{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: #435585;
+  padding: 2%;
+  margin-bottom: 2%;
+}
+
+.customer-reviews{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #435585;
+  padding: 2%;
+}
+
+.container_detail2{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 5%;
+  margin-left: 6%;
+  margin-right: 6%;
+}
+
+.like{
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:#435585;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  border-radius: 50%;
+  border: 0;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
